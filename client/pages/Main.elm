@@ -1,7 +1,7 @@
 module Main exposing (..)
 
 import Html exposing (Html, h1, text)
-import Html.Attributes exposing (style)
+import Html.Attributes exposing (style, class)
 
 -- MODEL
 
@@ -21,7 +21,9 @@ view : Model -> Html Message
 view model =
   -- The inline style is being used for example purposes in order to keep this example simple and
   -- avoid loading additional resources. Use a proper stylesheet when building your own app.
-  h1 [style [("display", "flex"), ("justify-content", "center")]]
+  h1 [style [("display", "flex"), ("justify-content", "center")]
+    , class "heading-green"
+     ]
      [text "Hello Elm!"]
 
 -- MESSAGE
