@@ -1,4 +1,2 @@
-import Elm from './Main'
-export const App = Elm
-
+export {Hello} from './hello.js';
 export {style} from './style.css'

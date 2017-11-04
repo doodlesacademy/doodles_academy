@@ -6,8 +6,8 @@ default: &default
   public_output_path: packs
 
   extensions:
-    - .elm
     - .js
+    - .jsx
     - .css
     - .png
     - .svg
