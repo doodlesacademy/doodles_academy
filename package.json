@@ -35,6 +35,8 @@
     "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.58.0",
     "webpack-dev-server": "^2.6.1"
   }
 }
