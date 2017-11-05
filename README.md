@@ -17,6 +17,7 @@ bin/rails s
 ```
 To compile the front-end client-code (located in `client`), run:
 ```bash
+yarn install
 bin/rake webpacker:compile
 ```
 
