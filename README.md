@@ -8,6 +8,7 @@ _Versions that I've tested with in parentheses._
 - Bundler (`1.15.3`)
 - Yarn (`1.2.1`)
 - Postgres (`9.6.3`)
+- Node (`8.9.0`)
 
 ## Setup
 To run the server, first clone the repo, and then in the cloned directory:
@@ -19,6 +20,10 @@ To compile the front-end client-code (located in `client`), run:
 ```bash
 yarn install
 bin/rake webpacker:compile
+```
+Alternatively, to have webpack watch for changes to client code, run the webpack-dev-server:
+```bash
+bin/webpack-dev-server
 ```
 
 ## Client structure
