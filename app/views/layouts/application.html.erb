@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DoodlesAcademy</title>
+    <title>Doodles Academy</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_pack_tag 'pages' %>
-    <%= javascript_pack_tag 'pages' %>
+    <%= yield :stylesheet_includes %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="body-<%= 'body' %>">
+    <div id="wrapper">
+      <%= render "shared/header" %>
+      <div id="page-container">
+        <%= yield %>
+      </div>
+      <%= render "shared/footer" %>
+      <%= yield :javascript_includes %>
+    </div>
   </body>
 </html>

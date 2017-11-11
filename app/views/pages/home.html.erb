@@ -1,0 +1,20 @@
+<div id="page-home">
+  <div class="">
+    <h1>Homepage</h1>
+    <p>This is rails rendered content that doesn't use react.</p>
+  </div>
+
+  <aside
+    id="sidebar"
+    class=""
+    data="<%= @sidebar.to_json %>">
+  </aside>
+</div>
+
+<% content_for :javascript_includes do %>
+  <%= javascript_pack_tag 'home' %>
+<% end %>
+
+<% content_for :stylesheet_includes do %>
+  <%= stylesheet_pack_tag 'home' %>
+<% end %>
