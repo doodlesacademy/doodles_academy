@@ -26,6 +26,13 @@ Alternatively, to have webpack watch for changes to client code, run the webpack
 bin/webpack-dev-server
 ```
 
+## Development
+To quickly start the development servers, use npm scripts and yarn:
+```
+yarn server
+yarn client
+```
+
 ## Client structure
 We're using the [Rails webpacker](https://github.com/rails/webpacker) module to replace the old-school asset-pipeline approach to JS/CSS compilation. I've modified this slightly to house all of our client code in the top-level `client` directory.
 
