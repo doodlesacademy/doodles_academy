@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Doodles Academy</title>
+    <title>Doodles Academy - <%= content_for?(:title) ? content_for(:title) : '' %></title>
     <%= csrf_meta_tags %>
     <%= yield :stylesheet_includes %>
   </head>
