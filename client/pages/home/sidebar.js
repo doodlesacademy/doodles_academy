@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import "./sidebar.css";
 
 export const Sidebar = props => (
-  <div>
-    <h1>Sidebar React Component</h1>
+  <div className="p2">
+    <h2>Sidebar React Component</h2>
     <p>{props.content}</p>
   </div>
 )

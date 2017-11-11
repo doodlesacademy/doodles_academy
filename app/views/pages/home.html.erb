@@ -1,14 +1,16 @@
-<div id="page-home">
-  <div class="">
-    <h1>Homepage</h1>
-    <p>This is rails rendered content that doesn't use react.</p>
-  </div>
+<div id="page-home" class="max-width-4 ml-auto mr-auto pt2">
+  <div class="flex flex-wrap mxn1">
+    <div class="col-9 p1">
+      <h1 class="mt0">Homepage</h1>
+      <p>This is rails rendered content that doesn't use react.</p>
+    </div>
 
-  <aside
-    id="sidebar"
-    class=""
-    data="<%= @sidebar.to_json %>">
-  </aside>
+    <aside
+      id="sidebar"
+      class="col-3 p1"
+      data="<%= @sidebar.to_json %>">
+    </aside>
+  </div>
 </div>
 
 <%- title "Home" %>

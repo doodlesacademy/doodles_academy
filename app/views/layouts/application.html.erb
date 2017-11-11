@@ -3,16 +3,21 @@
   <head>
     <title>Doodles Academy - <%= content_for?(:title) ? content_for(:title) : '' %></title>
     <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css">
+    <%= stylesheet_pack_tag 'application' %>
     <%= yield :stylesheet_includes %>
   </head>
 
   <body class="body-<%= 'body' %>">
     <div id="wrapper">
       <%= render "shared/header" %>
-      <div id="page-container">
+      <div id="page-container" class="p2">
         <%= yield %>
+        <div id="footer-wrapper">
+          <%= render "shared/footer" %>
+        </div>
       </div>
-      <%= render "shared/footer" %>
+      <%= javascript_pack_tag 'application' %>
       <%= yield :javascript_includes %>
     </div>
   </body>
