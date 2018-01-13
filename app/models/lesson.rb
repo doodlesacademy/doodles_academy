@@ -1,3 +1,3 @@
 class Lesson < ApplicationRecord
-  belongs_to :lesson_set
+  has_and_belongs_to_many :lesson_sets
 end
