@@ -1,9 +1,4 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  unit: 
-  title: MyString
-
-two:
-  unit: 
-  title: MyString
+superhero:
+  title: 'Superheroes'
