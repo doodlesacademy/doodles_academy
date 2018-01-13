@@ -1,7 +1,15 @@
 require 'test_helper'
 
 class ProjectTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @project = Project.first
+  end
+
+  test 'that a project has units' do
+    assert @project.units.count == 1
+  end
+
+  test 'that a project has lesson sets' do
+    assert @project.lesson_sets.count == 2
+  end
 end

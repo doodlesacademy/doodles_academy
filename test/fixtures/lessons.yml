@@ -2,16 +2,12 @@
 
 superhero_1:
   title: 'Superhero 1'
-  lesson_sets: superhero_lower
 
 superhero_2:
   title: 'Superhero 2'
-  lesson_sets: superhero_lower
 
 superhero_3:
   title: 'Superhero 3'
-  lesson_sets: superhero_upper
 
 superhero_4:
   title: 'Superhero 4'
-  lesson_sets: superhero_upper
