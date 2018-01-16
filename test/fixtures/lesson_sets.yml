@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+superhero_lower:
+  project: superhero
+  grade_level: lower
+  lessons: superhero_1, superhero_2
+
+superhero_upper:
+  project: superhero
+  grade_level: upper
+  lessons: superhero_3, superhero_4

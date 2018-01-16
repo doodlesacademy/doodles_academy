@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+superhero_1:
+  title: 'Superhero 1'
+
+superhero_2:
+  title: 'Superhero 2'
+
+superhero_3:
+  title: 'Superhero 3'
+
+superhero_4:
+  title: 'Superhero 4'
