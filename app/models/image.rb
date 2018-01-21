@@ -1,4 +1,4 @@
 class Image < ApplicationRecord
   belongs_to :imageable, polymorphic: true
-  enum type: [:default, :hero]
+  enum role: [:default, :hero]
 end

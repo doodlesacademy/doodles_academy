@@ -7,3 +7,13 @@ image_2:
   title: 'Painting 2'
   role: 1
   imageable: superhero (Project)
+
+image_3:
+  title: 'Painting 3'
+  role: 1
+  imageable: superhero_1 (Lesson)
+
+image_4:
+  title: 'Painting 4'
+  role: 1
+  imageable: superhero_2 (Lesson)

@@ -1,4 +1,5 @@
 class Lesson < ApplicationRecord
+  include Imageable
+
   has_and_belongs_to_many :lesson_sets
-  has_many :images, as: :imageable
 end
