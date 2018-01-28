@@ -8,6 +8,8 @@ class CreateBlocks < ActiveRecord::Migration[5.1]
       t.integer :role
       t.integer :style
 
+      t.references :blockable, polymorphic: true, index: true
+
       t.timestamps
     end
   end

@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class BlockTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @block = Block.first
+  end
+
+  test 'block has a blockable' do
+    @project = Project.first
+    assert @block.blockable == @project
+  end
 end

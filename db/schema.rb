@@ -22,8 +22,11 @@ ActiveRecord::Schema.define(version: 20180128150414) do
     t.integer "order", null: false
     t.integer "role"
     t.integer "style"
+    t.string "blockable_type"
+    t.bigint "blockable_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["blockable_type", "blockable_id"], name: "index_blocks_on_blockable_type_and_blockable_id"
   end
 
   create_table "grade_levels", force: :cascade do |t|

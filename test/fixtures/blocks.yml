@@ -1,11 +1,17 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+block_1:
+  heading: 'Heading 1'
+  subheading: 'Subheading 1'
+  body: 'Body 1'
+  order: 1
+  role: 0
+  style: 0
+  blockable: superhero (Project)
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+block_2:
+  heading: 'Heading 2'
+  subheading: 'Subheading 2'
+  body: 'Body 2'
+  order: 2
+  role: 0
+  style: 0
+  blockable: superhero_1 (Lesson)
