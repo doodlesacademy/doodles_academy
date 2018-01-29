@@ -1,0 +1,17 @@
+block_1:
+  heading: 'Heading 1'
+  subheading: 'Subheading 1'
+  body: 'Body 1'
+  order: 1
+  role: 0
+  style: 0
+  blockable: superhero (Project)
+
+block_2:
+  heading: 'Heading 2'
+  subheading: 'Subheading 2'
+  body: 'Body 2'
+  order: 2
+  role: 0
+  style: 0
+  blockable: superhero_1 (Lesson)
