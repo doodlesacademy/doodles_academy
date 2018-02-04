@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180121144112) do
+ActiveRecord::Schema.define(version: 20180204144827) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "blocks", force: :cascade do |t|
+    t.string "heading"
+    t.string "subheading"
+    t.text "body"
+    t.integer "order", null: false
+    t.integer "role"
+    t.integer "style"
+    t.string "blockable_type"
+    t.bigint "blockable_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["blockable_type", "blockable_id"], name: "index_blocks_on_blockable_type_and_blockable_id"
+  end
 
   create_table "grade_levels", force: :cascade do |t|
     t.integer "level", null: false
@@ -29,6 +43,10 @@ ActiveRecord::Schema.define(version: 20180121144112) do
     t.bigint "imageable_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "attachment_file_name"
+    t.string "attachment_content_type"
+    t.integer "attachment_file_size"
+    t.datetime "attachment_updated_at"
     t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id"
   end
 
