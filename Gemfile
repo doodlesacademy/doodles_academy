@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'aws-sdk'
 gem 'paperclip'
 
+gem 'devise'
+
 group :development, :test do
   gem 'rubocop', require: false
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
