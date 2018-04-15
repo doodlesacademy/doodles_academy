@@ -14,6 +14,18 @@ class OrganizationTest < ActiveSupport::TestCase
   end
 
   test 'has users through memberships' do
-    assert @org.users.count == 2
+    assert @org.users.count == 4
+  end
+
+  test 'has admins instance method' do
+    assert @org.admins.count == 1
+  end
+
+  test 'has instructors instance method' do
+    assert @org.instructors.count == 1
+  end
+
+  test 'has students instance method' do
+    assert @org.students.count == 2
   end
 end

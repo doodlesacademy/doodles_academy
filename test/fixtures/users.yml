@@ -9,3 +9,9 @@ gandalf:
 
 elrond:
   email: 'elrond@middle-earth.edu'
+
+frodo:
+  email: 'frodo@middle-earth.edu'
+
+samwise:
+  email: 'samewise@middle-earth.edu'

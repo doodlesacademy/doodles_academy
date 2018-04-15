@@ -14,3 +14,13 @@ elrond_profile:
   user: elrond
   first_name: 'Elrond'
   last_name: 'Half-Elven'
+
+frodo_profile:
+  user: frodo
+  first_name: 'Frodo'
+  last_name: 'Baggins'
+
+samwise_profile:
+  user: samwise
+  first_name: 'Samwise'
+  last_name: 'Gamgee'
