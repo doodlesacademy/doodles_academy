@@ -7,4 +7,16 @@ class User < ApplicationRecord
   has_one :profile
   has_one :membership
   has_one :organization, through: :membership
+
+  def admin?
+    membership.admin?
+  end
+
+  def instructor?
+    membership.instructor?
+  end
+
+  def student?
+    membership.student?
+  end
 end
