@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @user = User.first
+    @profile = Profile.first
+  end
+
+  test 'user has a profile' do
+    assert @user.profile == @profile
+  end
 end

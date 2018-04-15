@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180409235934) do
+ActiveRecord::Schema.define(version: 20180415144649) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -71,6 +71,35 @@ ActiveRecord::Schema.define(version: 20180409235934) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "mailing_addresses", force: :cascade do |t|
+    t.string "street_1"
+    t.string "street_2"
+    t.string "city"
+    t.string "state_province"
+    t.string "zip_postal"
+    t.string "mail_addressable_type"
+    t.bigint "mail_addressable_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["mail_addressable_type", "mail_addressable_id"], name: "index_mail_address_mail_addressable"
+  end
+
+  create_table "organizations", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "title"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "projects", force: :cascade do |t|

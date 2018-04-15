@@ -4,5 +4,9 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-gandalf_user:
-  email: 'gandalf@middle-earth.edu'
+middle-earth:
+  street_1: '1 Elrong Rd'
+  city: 'Rivendell'
+  state_province: 'Massachusetts'
+  zip_postal: '11111'
+  mail_addressable: middle-earth (Organization)
