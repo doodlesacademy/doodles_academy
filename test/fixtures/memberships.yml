@@ -4,8 +4,12 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-gandalf:
-  email: 'gandalf@middle-earth.edu'
+one:
+  user: gandalf
+  organization: middle-earth
+  role: 1
 
-elrond:
-  email: 'elrond@middle-earth.edu'
+two:
+  user: elrond
+  organization: middle-earth
+  role: 1

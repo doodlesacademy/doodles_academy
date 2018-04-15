@@ -6,6 +6,11 @@
 #
 
 gandalf_profile:
-  user: gandalf_user
+  user: gandalf
   first_name: 'Gandalf'
   last_name: 'The Grey'
+
+elrond_profile:
+  user: elrond
+  first_name: 'Elrond'
+  last_name: 'Half-Elven'
