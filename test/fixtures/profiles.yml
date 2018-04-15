@@ -24,3 +24,8 @@ samwise_profile:
   user: samwise
   first_name: 'Samwise'
   last_name: 'Gamgee'
+
+muaddib_profile:
+  user: muaddib
+  first_name: 'MuadDib'
+  last_name: 'Mahdi'

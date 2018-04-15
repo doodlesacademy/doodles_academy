@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  include MailAddressable
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -9,14 +11,18 @@ class User < ApplicationRecord
   has_one :organization, through: :membership
 
   def admin?
-    membership.admin?
+    independent? || membership.admin?
   end
 
   def instructor?
-    membership.instructor?
+    !independent? && membership.instructor?
   end
 
   def student?
-    membership.student?
+    !independent? && membership.student?
+  end
+
+  def independent?
+    membership.nil?
   end
 end
