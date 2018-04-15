@@ -4,5 +4,17 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-gandalf_user:
+gandalf:
   email: 'gandalf@middle-earth.edu'
+
+elrond:
+  email: 'elrond@middle-earth.edu'
+
+frodo:
+  email: 'frodo@middle-earth.edu'
+
+samwise:
+  email: 'samewise@middle-earth.edu'
+
+mauddib:
+  email: 'muaddib@dune.edu'

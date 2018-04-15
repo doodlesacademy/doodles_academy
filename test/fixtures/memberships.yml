@@ -4,28 +4,22 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-
-gandalf_profile:
+one:
   user: gandalf
-  first_name: 'Gandalf'
-  last_name: 'The Grey'
+  organization: middle-earth
+  role: 2
 
-elrond_profile:
+two:
   user: elrond
-  first_name: 'Elrond'
-  last_name: 'Half-Elven'
+  organization: middle-earth
+  role: 1
 
-frodo_profile:
+three:
   user: frodo
-  first_name: 'Frodo'
-  last_name: 'Baggins'
+  organization: middle-earth
+  role: 0
 
-samwise_profile:
+four:
   user: samwise
-  first_name: 'Samwise'
-  last_name: 'Gamgee'
-
-muaddib_profile:
-  user: muaddib
-  first_name: 'MuadDib'
-  last_name: 'Mahdi'
+  organization: middle-earth
+  role: 0

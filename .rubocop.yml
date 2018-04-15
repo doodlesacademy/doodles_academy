@@ -30,6 +30,9 @@ Style/DotPosition:
 Style/SymbolArray:
   Enabled: false
 
+Style/DoubleNegation:
+  Enabled: false
+
 Style/RegexpLiteral:
   Enabled: false
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180415144649) do
+ActiveRecord::Schema.define(version: 2018_04_15_173434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -84,6 +84,16 @@ ActiveRecord::Schema.define(version: 20180415144649) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["mail_addressable_type", "mail_addressable_id"], name: "index_mail_address_mail_addressable"
+  end
+
+  create_table "memberships", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "organization_id"
+    t.integer "role", default: 1, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["organization_id"], name: "index_memberships_on_organization_id"
+    t.index ["user_id"], name: "index_memberships_on_user_id"
   end
 
   create_table "organizations", force: :cascade do |t|
