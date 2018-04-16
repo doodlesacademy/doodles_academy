@@ -1,9 +1,20 @@
 class Image < ApplicationRecord
+  include Rails.application.routes.url_helpers
+
   belongs_to :imageable, polymorphic: true
   enum role: [:default, :hero]
 
-  has_attached_file :attachment,
-                    styles: { thumb: '100x100>' },
-                    default_url: '/images/:styles/missing.png'
-  validates_attachment_content_type :attachment, content_type: /\Aimage\/.*\z/
+  has_one_attached :file
+
+  def url
+    url_for(file)
+  end
+
+  def download_url
+    rails_blob_url(file, disposition: 'attachment')
+  end
+
+  def thumb_url
+    file.variant(resize: '100x100>')
+  end
 end
