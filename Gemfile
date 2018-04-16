@@ -15,8 +15,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'aws-sdk'
-gem 'paperclip'
+gem 'aws-sdk-s3', require: false
+gem 'mini_magick'
 
 gem 'devise'
 
