@@ -10,3 +10,10 @@ middle-earth:
   state_province: 'Massachusetts'
   zip_postal: '11111'
   mail_addressable: middle-earth (Organization)
+
+arrakis:
+  street_1: '1 Dune Rd'
+  city: 'Arrakean'
+  state_province: 'Massachusetts'
+  zip_postal: '11111'
+  mail_addressable: muaddib-profile (Profile)
